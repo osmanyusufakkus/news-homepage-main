@@ -6,7 +6,7 @@ type Props = {}
 
 export default function MostViewedContainer({}: Props) {
   return (
-    <div className='grid grid-cols-12 gap-2' >
+    <div className='grid grid-cols-12 gap-4' >
         <MostViewedNewItem imagename='/image-retro-pcs.jpg'
         newsNumber='01' header='Reviving Retro PCs' brief='What happens when old PCs are given modern upgrades?'/>
         <MostViewedNewItem imagename='/image-top-laptops.jpg'
