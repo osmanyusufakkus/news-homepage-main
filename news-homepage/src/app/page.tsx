@@ -1,3 +1,4 @@
+import HighlightedNew from "@/components/HighlightedNew";
 import MostViewedContainer from "@/components/MostViewedContainer";
 import MostViewedNews from "@/components/MostViewedNews";
 import NewsContainer from "@/components/NewsContainer";
@@ -10,7 +11,7 @@ export default function Home() {
       
       <WebHeader/>
       <div className='grid grid-cols-12 gap-4 my-4'>
-        <div className='col-span-12 mb:col-span-8 h-[420px] bg-slate-500'></div>
+        <HighlightedNew/>
         <NewsContainer/>
       </div>
         <MostViewedContainer/>
