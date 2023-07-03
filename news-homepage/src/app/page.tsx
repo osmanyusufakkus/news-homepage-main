@@ -1,6 +1,5 @@
 import HighlightedNew from "@/components/HighlightedNew";
 import MostViewedContainer from "@/components/MostViewedContainer";
-import MostViewedNews from "@/components/MostViewedNews";
 import NewsContainer from "@/components/NewsContainer";
 import WebHeader from "@/components/WebHeader";
 
