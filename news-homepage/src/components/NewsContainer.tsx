@@ -3,7 +3,7 @@ import News from './News'
 
 export default function NewsContainer() {
   return (
-    <div className='col-span-12 mb:col-span-4 bg-slate-950 p-2 mb:p-6'>
+    <div className='col-span-12 md:col-span-4 bg-slate-950 p-2 mb:p-6'>
       <span className='text-3xl text-primary-softOrange font-semibold my-4'>New</span>
       <News title="Hydrogen vs Electric Cars" content='Will hydrogen-fueled cars ever catch up to EVs?'/>
       <hr className='bg-gray-500 border-none h-[2px] my-6' />
