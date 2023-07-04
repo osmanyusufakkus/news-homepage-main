@@ -1,5 +1,6 @@
 'use client'
 import React from 'react'
+import cx from 'classnames'
 
 type Props = {}
 
@@ -18,15 +19,12 @@ export default function WebHeader({}: Props) {
             <span className='cursor-pointer hover:text-primary-softOrange'>Trending</span>
             <span className='cursor-pointer hover:text-primary-softOrange'>Categories</span>
           </div>
-          {!open && 
           <img src="icon-menu.svg" className='h-5 w-auto block mb:hidden' onClick={()=>{
             setOpen(!open);
           }}/>
-          }
-
-          {open &&
-          <div className='fixed mb:hidden z-10 top-0 right-0 h-[100vh] bg-white min-w-[320px] '>
-            <img src="icon-menu-close.svg" className='h-8 w-8 block mb:hidden fixed top-9 right-12' onClick={()=>{
+          
+          <div className={cx('fixed mb:hidden z-10 top-0 right-0 h-[100vh] bg-white min-w-[320px]', {'translate-x-[320px] duration-300': open}, {'translate-x-[0px] duration-300': !open})}>
+            <img src="icon-menu-close.svg" className='h-8 w-8 block mb:hidden fixed top-9 right-12 z-20' onClick={()=>{
               setOpen(!open);
             }}/>
             <div className='flex flex-col gap-4 md:gap-12 text-2xl text-neutral-darkGrayishBlue font-semibold p-6 pt-40'>
@@ -37,7 +35,7 @@ export default function WebHeader({}: Props) {
               <span className='cursor-pointer hover:text-primary-softOrange'>Categories</span>
             </div>
           </div>
-          }
+          
 
         </div>
     </div>
